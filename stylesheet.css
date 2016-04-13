@@ -27,7 +27,7 @@ body{
 }
 
 #title{
-	font-size: 100px;
+	font-size: 80px;
 	margin-bottom: 0;
 	text-align: center;
 	position: relative;
@@ -37,8 +37,15 @@ body{
 
  #blurb{
  	margin-top: 0px;
- 	font-size: 70px;
+ 	font-size: 60px;
  	text-align: center;
 	position: relative;
   	top: 40%;
+ }
+
+ .down{
+ 	left: 45vw;
+ 	max-width: 300px;
+ 	max-height: 80px;
+ 	top: 40%;
  }

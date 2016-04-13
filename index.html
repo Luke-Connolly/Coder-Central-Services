@@ -45,12 +45,14 @@
 
   		<script>
   			$(document).ready(function(){
-  				$('body').addClass('stop-scrolling')
+  				//$('body').addClass('stop-scrolling')
   				$("#title").hide();
   				$("#blurb").hide();
-  				$("#gif").delay(4500).fadeOut(1000);
-  				$("#title").delay(5500).fadeIn(1000);
-  				$("#blurb").delay(6500).fadeIn(1000);
+  				$(".down").hide();
+  				//$("#gif").delay(4500).fadeOut(1000);
+  				$("#title").fadeIn(1000);
+  				$("#blurb").delay(2000).fadeIn(1000);
+  				$(".down").delay(2050).fadeIn(1000);
  			});
   		</script>
 
@@ -79,11 +81,12 @@
 	Blurb
 	"v" arrow
 	-->
-		<img src = "Images/light-bulb.gif" id = "gif" alt = "Light Bulb GIF"></img>
+	<!--<img src = "Images/light-bulb.gif" id = "gif" alt = "Light Bulb GIF"></img>-->
 
 		<div class = "page" id = "page1">
 			<h1 id = "title"> Web Central</h1>
 			<p id = "blurb"> Be Inspired. </p>
+			<img src="http://www.clker.com/cliparts/y/m/X/o/s/R/down-arrow-circle-hi.png" class = "down"></img>
 		</div>
 
 <!-- What We're About: Flo -->
@@ -93,6 +96,11 @@
 	Quote
 	Button thing??
 	-->
+		<div class = "page" id = "page2">
+			<div>
+			</div>
+
+		</div>
 
 <!-- Our Works: Neil -->
 	<!--
@@ -100,6 +108,12 @@
 		Description
 		Price
 	-->
+
+		<div class = "page" id = "page2">
+			<div>
+			</div>
+
+		</div>
 
 <!-- Why Us?: Jae-->
 	<!--
@@ -110,10 +124,23 @@
 		Paragraph
 	-->
 
+		<div class = "page" id = "page2">
+			<div>
+			</div>
+
+		</div>
+
 <!-- Contact Us: Luke -->
 	<!--
 	Copy the contact us form from another site
 	 -->
+	 	<div class = "page" id = "page2">
+			<div>
+			</div>
+
+		</div>
+
+
 	</body>
 
 <html>
