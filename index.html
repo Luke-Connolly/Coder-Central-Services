@@ -3,13 +3,12 @@
 	<head>
   		<title>Web Central</title>
   		<link href="stylesheet.css" rel="stylesheet"><!-- CSS for our page-->
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-  		</script>
   		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<nav class="navbar navbar-default">
+	</head>
+	<body data-spy="scroll" data-target="#navbar">
+<nav class="navbar navbar-default" id = "navbar">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -19,43 +18,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Web Services</a>
+      <p class="navbar-brand">Web Services</p>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Students</a></li>
-        <li><a href="#">Parents</a></li>
+      <ul class="nav navbar-nav">
+        <li id="aboutlink" class="active"><a href="#">About</a></li>
+        <li id="portfoliolink"><a href="#">Portfolio</a></li>
+        <li id="contactlink"><a href="#">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
-  		<script>
-  			$(document).ready(function(){
-  				$('body').addClass('stop-scrolling')
-  				$("#title").hide();
-  				$("#blurb").hide();
-  				$("#gif").delay(4500).fadeOut(1000);
-  				$("#title").delay(5500).fadeIn(1000);
-  				$("#blurb").delay(6500).fadeIn(1000);
- 			});
-  		</script>
-
-	</head>
-	<body>
 	<!-- Notes:
 	Each section takes up the full screen
 	Navbar scrolls you down to a part of the page, not a new page
@@ -114,6 +89,17 @@
 	<!--
 	Copy the contact us form from another site
 	 -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <script>
+        $(document).ready(function(){
+          $('body').addClass('stop-scrolling')
+          $("#title").hide();
+          $("#blurb").hide();
+          $("#gif").delay(4500).fadeOut(1000);
+          $("#title").delay(5500).fadeIn(1000);
+          $("#blurb").delay(6500).fadeIn(1000);
+          $('body').scrollspy({ target: '#navbar'})
+        });
+      </script>
 	</body>
-
 <html>
