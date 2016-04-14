@@ -31,7 +31,7 @@ body{
 	margin-bottom: 0;
 	text-align: center;
 	position: relative;
-  	top: 40%;
+  	top: 25%;
 
  }
 
@@ -40,12 +40,17 @@ body{
  	font-size: 60px;
  	text-align: center;
 	position: relative;
-  	top: 40%;
+  	top: 25%;
+ }
+
+ .navbar{
+ 	z-index: 30;
  }
 
  .down{
- 	left: 45vw;
+ 	position: relative;
  	max-width: 300px;
  	max-height: 80px;
- 	top: 40%;
+ 	margin-top: 10px;
+ 	left: 50%;
  }
